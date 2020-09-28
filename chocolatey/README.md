@@ -10,7 +10,6 @@
 Set-ExecutionPolicy Bypass -Scope Process
 
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-
 ```
 
 ![Install Chocolatey](2.png)
@@ -31,11 +30,11 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ![Checking](6.png)
 
-7. This step is *optional*, but It's good to turn off any firewall or AV right now. It's proven that, they are able to interfere this process. Go to firewall and turn it off.
+7. This step is *optional*, but it's good to turn off any firewall or AV right now. It's proven that, they are able to interfere this process. Go to firewall and turn it off.
 
 ![Firewall turned off](7.png)
 
-8. Choose the path where you want to install the experiment. In this case, I would be using `C:\Users\Default`. As stated on https://empirica.ly/docs/quick-start.html. We can issue this commands
+8. Choose the path where you want to install the experiment. In this case, I would be using `C:\Users\Default`. Issue these commands, as stated on https://empirica.ly/docs/quick-start.html
 
 ```
 npx create-empirica-app my-experiment
@@ -45,7 +44,7 @@ meteor
 
 ![Run empirica](8.png)
 
-9. If it's running, then you can access this on http://localhost:3000
+9. If it's successfully running, you can access this on http://localhost:3000
 
 ![Empirica Running](9.png)
 
