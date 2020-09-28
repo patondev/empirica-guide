@@ -25,15 +25,15 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 5. Install meteor by issuing command `choco install meteor`. After it's done, then you need to close and re-open powershell (step 1)
 
-[!Meteor Installation](5.png)
+![Meteor Installation](5.png)
 
 6. Check all required software.
 
-[!Checking](6.png)
+![Checking](6.png)
 
 7. This step is *optional*, but It's good to turn off any firewall or AV right now. It's proven that, they are able to interfere this process. Go to firewall and turn it off.
 
-[!Firewall turned off](7.png)
+![Firewall turned off](7.png)
 
 8. Choose the path where you want to install the experiment. In this case, I would be using `C:\Users\Default`. As stated on https://empirica.ly/docs/quick-start.html. We can issue this commands
 
@@ -43,9 +43,9 @@ cd my-experiment
 meteor
 ```
 
-[!Run empirica](8.png)
+![Run empirica](8.png)
 
 9. If it's running, then you can access this on http://localhost:3000
 
-[!Empirica Running](9.png)
+![Empirica Running](9.png)
 
