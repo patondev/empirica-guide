@@ -52,7 +52,7 @@ Then issue this command to remove existing container
 docker rm -f empiricadev
 ```
 
-3. After you run the container (It may take 5 minutes), you might want to see the logs to gain admin login.
+3. After you run the container (It may take 5 minutes), you might want to see the logs to retrieve admin credential.
 
 ![Empirica is running](screenshots/6.png)
 
