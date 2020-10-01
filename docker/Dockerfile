@@ -1,6 +1,7 @@
 FROM node:lts-buster
 
 COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
 USER node
 ENV PATH="/home/node/.meteor:${PATH}"
