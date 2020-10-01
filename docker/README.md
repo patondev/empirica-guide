@@ -2,7 +2,7 @@
 
 ## Docker installation (Windows)
 
-Please refer to this guide: https://docs.docker.com/docker-for-windows/install/. Please take a look at notes below:
+Please refer to this guide: https://docs.docker.com/docker-for-windows/install/. Take a look at notes below:
 
 * You have to make sure that you install WSL 2 on Windows. Before going to docker installation, make sure the `Install required components for WSL2` option is available.
 
@@ -22,7 +22,7 @@ Please refer to this guide: https://docs.docker.com/docker-for-windows/install/.
 
 Then click apply & restart
 
-* Until this point, you can relaunch the terminal and issue `docker` command. It should be ready.
+* You can relaunch the terminal and issue `docker` command. It should be ready.
 
 ## Run Empirica
 
@@ -34,13 +34,13 @@ docker build . -t empirica/dev
 
 ![Building Empirica](screenshots/5.png)
 
-2. Run your first app
+2. Run empirica image
 
 ```
 docker run -dit -p 3000:3000 --name empiricadev empirica/dev
 ```
 
-3. If you get this error
+*If you get this error*
 
 ```
 docker: Error response from daemon: Conflict. The container name "/empiricadev" is already in use by container "ba6b63744a1d239d6092ac2012654a0491cdc37d708b1fcfa23ee158ba07c864". You have to remove (or rename) that container to be able to reuse that name.
@@ -52,11 +52,11 @@ Then issue this command to remove existing container
 docker rm -f empiricadev
 ```
 
-4. After you run the container (It may take 5 minutes), you might want to see the logs to gain admin login.
+3. After you run the container (It may take 5 minutes), you might want to see the logs to gain admin login.
 
 ![Empirica is running](screenshots/6.png)
 
-5. Now, access `http://<your docker host IP>:3000/`. If it's on local, then it should be `localhost:3000`. 
+4. Now, access `http://<your docker host IP>:3000/`. If it's on local, then it should be `localhost:3000`. 
 
 ![Web admin](screenshots/7.png)
 
