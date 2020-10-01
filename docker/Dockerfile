@@ -1,7 +1,10 @@
 FROM node:lts-buster
 
-WORKDIR /root
-RUN npm config set unsafe-perm true && npx create-empirica-app my-experiment
-WORKDIR /root/my-experiment
+COPY entrpoint.sh /entrypoint.sh
 
-ENTRYPOINT ["meteor","--allow-superuser"]
+USER node
+WORKDIR /home/node
+RUN npx create-empirica-app my-experiment
+WORKDIR /home/node/my-experiment
+
+ENTRYPOINT ["/entrypoint.sh"]

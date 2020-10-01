@@ -1,14 +1,9 @@
 # Installation
 
-## Trivia
-
-As simple as
-
-```
-docker-compose up
-```
-
 ## Docker installation (Windows)
 
-## Todo
-* Put the code as volume so it can be modified from windows user space
+Please refer to this guide: https://docs.docker.com/docker-for-windows/install/
+
+## Docker commands
+
+1. 
