@@ -2,7 +2,7 @@
 
 ## Docker installation (Windows)
 
-Please refer to this guide: https://docs.docker.com/docker-for-windows/install/
+Please refer to this guide: https://docs.docker.com/docker-for-windows/wsl/
 
 ## Step
 
