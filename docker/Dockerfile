@@ -1,8 +1,9 @@
 FROM node:lts-buster
 
-COPY entrpoint.sh /entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
 
 USER node
+ENV PATH="/home/node/.meteor:${PATH}"
 WORKDIR /home/node
 RUN npx create-empirica-app my-experiment
 WORKDIR /home/node/my-experiment
