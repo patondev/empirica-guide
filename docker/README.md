@@ -57,3 +57,17 @@ I20201001-03:22:19.715(0)? Inserting default Factor Type: playerCount
 ![Empirica](1.png)
 
 6. Take a note that, the code is inside the container right now. You need to copy that to your host machine in order to edit it.
+
+
+```
+docker cp empiricadev:/home/node/my-experiment ~/code
+```
+
+7. Now you can remove current working container, and replace it like this
+
+```
+docker rm -f empiricadev
+docker run -dit -p 3000:3000 -v ~/code:/home/node/my-experiment --name empiricadev empirica/dev
+```
+
+8. 
